@@ -1,0 +1,33 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "",
+        "limitSymbolsToIncludedHeaders": true
+      },
+      "includePath": [
+        "/home/jose/space_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/opt/openrobots/include/**",
+        "/home/jose/space_ws/src/aruco_ros/aruco/include/**",
+        "/home/jose/space_ws/src/aruco_ros/aruco_ros/include/**",
+        "/home/jose/space_ws/src/open_manipulator/DynamixelSDK/ros/dynamixel_sdk/include/**",
+        "/home/jose/space_ws/src/open_manipulator/dynamixel-workbench/dynamixel_workbench_controllers/include/**",
+        "/home/jose/space_ws/src/open_manipulator/dynamixel-workbench/dynamixel_workbench_operators/include/**",
+        "/home/jose/space_ws/src/open_manipulator/dynamixel-workbench/dynamixel_workbench_toolbox/include/**",
+        "/home/jose/space_ws/src/open_manipulator/open_manipulator_control_gui/include/**",
+        "/home/jose/space_ws/src/open_manipulator/open_manipulator_controller/include/**",
+        "/home/jose/space_ws/src/open_manipulator/open_manipulator_libs/include/**",
+        "/home/jose/space_ws/src/open_manipulator/open_manipulator_teleop/include/**",
+        "/home/jose/space_ws/src/orbit_publisher_pkg/include/**",
+        "/home/jose/space_ws/src/orbit_robot_pkg/include/**",
+        "/home/jose/space_ws/src/roboticsgroup_upatras_gazebo_plugins/include/**",
+        "/home/jose/space_ws/src/open_manipulator/robotis_manipulator/include/**",
+        "/home/jose/space_ws/src/talos_control/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS"
+    }
+  ],
+  "version": 4
+}
