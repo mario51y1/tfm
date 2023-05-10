@@ -4,7 +4,8 @@
   <arg name="robot"  default="upper_body"/>
   <arg name="gzpose" default="-x 0 -y 0 -z 1.0 -R 0.0 -P 0.0 -Y 0.0"/>
   <arg name="head_type" default="default"/>
-
+  <arg name="model_name" default="ASTROROBOT"/>
+  <arg name="parameter_name" default="robot_description"/>
   <!-- PAL Hardware gazebo config 
   <include file="$(find astronaut)/launch/astro_controllers_configuration.launch">
     <arg name="robot" value="$(arg robot)" />
@@ -18,7 +19,7 @@
 
   <!-- Spawn robot in Gazebo -->
   <node pkg="gazebo_ros" type="spawn_model" name="spawn_model"
-    args="-urdf -param robot_description $(arg gzpose) -model talos" />
+    args="-urdf -param $(arg parameter_name) $(arg gzpose) -model $(arg model_name)" />
 
   <group if="$(eval arg('head_type') == 'default')">
     <node ns="/rgbd/rgb/high_res" pkg="image_proc" type="image_proc" name="image_proc_high_res"/>

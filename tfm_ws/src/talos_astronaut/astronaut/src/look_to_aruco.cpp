@@ -33,7 +33,7 @@ int main(int argc, char **argv){
     head_pan_publisher.publish(head_pan_move);
     head_tilt_publisher.publish(head_tilt_move);
 
-    while(ros::ok){ 
+    while(&ros::ok){ 
 
         if(close_hand and not stop){
             hand_client.call(hand_operation);
