@@ -15,7 +15,7 @@
 
   <!-- Robot description -->
    <param
-            name="robot_description"
+            name="$(arg parameter_name)"
             command=" $(find xacro)/xacro 
                 '$(find talos_description)/urdf/talos.urdf.xacro'"
    />  
@@ -25,4 +25,8 @@
    <rosparam command="load" file="$(find talos_description)/config/pids_gripper.yaml" />
 
   <!-- <rosparam command="load" file="$(find talos_description)/config/collision_parameters.yaml" /> -->
+
+  <!-- PID gains -->
+  <rosparam command="load" file="$(find astronaut)/config/pids_astro.yaml"/>
+
 </launch>
