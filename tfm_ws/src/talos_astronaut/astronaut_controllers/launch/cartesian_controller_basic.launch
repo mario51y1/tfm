@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <launch>
-
+  <group ns='talos'>
   <rosparam file="$(find astronaut_controllers)/config/cartesian_controller_basic.yaml" command="load"/>
 
-  <node name="astronaut_controller_spawner" pkg="controller_manager" type="spawner" output="screen" args="right_arm_controller"/>
-
+  <node name="astronaut_controller_spawner" pkg="controller_manager" type="spawner" output="screen" args="right_arm_controller" robotNamespace="talos"/>
+</group>
 </launch>
