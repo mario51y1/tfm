@@ -7,7 +7,8 @@
       <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType> 
     </plugin>
   </gazebo> 
-  
+
+  <!-- THIS CAUSES ERROR WHEN LAUNCHING NOW STUFF-->
   <gazebo>
     <plugin name="Orbit_robot_pkg_plugin" filename="libOrbit_robot_pkg_plugin.so"/>
   </gazebo>

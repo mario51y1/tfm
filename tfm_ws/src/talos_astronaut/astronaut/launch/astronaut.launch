@@ -7,7 +7,7 @@
     <group if="$(arg testing)">
         <include file="$(find astronaut)/launch/talos_astronaut.launch">
             <arg name="world" default="$(find astronaut)/worlds/empty.world" />
-            <arg name="gzpose" default="-x 0.00 -y 0.00 -z 0.5 -R 0.00 -P 0.00 -Y 0.00"/>
+      <!-- <arg name="gzpose" default="-x 0.00 -y 0.00 -z 0.5 -R 0.00 -P 0.00 -Y 0.00"/> -->
         </include>
     </group>
 
