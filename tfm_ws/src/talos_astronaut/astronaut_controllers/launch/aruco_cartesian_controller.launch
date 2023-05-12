@@ -2,8 +2,10 @@
 
 <launch>
 
+  <group ns='talos'>
   <rosparam file="$(find astronaut_controllers)/config/aruco_cartesian_controller.yaml" command="load"/>
 
   <node name="astronaut_controller_spawner" pkg="controller_manager" type="spawner" output="screen" args="right_arm_controller"/>
 
+  </group>
 </launch>

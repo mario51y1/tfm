@@ -2,8 +2,9 @@
 
 <launch>
 
+  <group ns='talos'>
   <rosparam file="$(find talos_control)/config/aruco_cartesian_controller.yaml" command="load"/>
 
   <node name="talos_control_spawner" pkg="controller_manager" type="spawner" output="screen" args="right_arm_controller"/>
-
+  </group>
 </launch>

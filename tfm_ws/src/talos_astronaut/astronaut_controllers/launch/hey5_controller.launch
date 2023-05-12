@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <launch>
+  <group ns='talos'>
   <rosparam command="load" file="$(find astronaut_controllers)/config/hand_full_ft_hey5_controllers.yaml" />
 
   <!-- Controllers that come up started -->
@@ -13,6 +14,7 @@
   <!-- Servicio para abrir y cerrar las manos -->
   <node name="hand_service_node" pkg="astronaut_controllers" type="hand_service_astronaut" output="screen"/>
 
+  </group>
   <!-- Simple grasping action -->
   <!-- <node name="right_hand_grasping_action" pkg="simple_grasping_action" type="simple_grasping_action" output="screen">
     <param name="target_controller" value="right_hand_controller" />

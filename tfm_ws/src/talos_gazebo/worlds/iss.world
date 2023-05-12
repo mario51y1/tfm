@@ -25,12 +25,12 @@
         <wind>false</wind>
         <collision name="col_iss">
           <geometry>
-            <mesh><uri>/home/mario51y1/.gazebo/models/ISS_JOSE_WS/meshes/iss.dae</uri></mesh>
+            <mesh><uri>model://ISS_model/meshes/iss.dae</uri></mesh>
           </geometry>
         </collision>
         <visual name="visual_iss">
           <geometry>
-            <mesh><uri>/home/mario51y1/.gazebo/models/ISS_JOSE_WS/meshes/iss.dae</uri></mesh>
+            <mesh><uri>model://ISS_model/meshes/iss.dae</uri></mesh>
           </geometry>
         </visual>
       </link>

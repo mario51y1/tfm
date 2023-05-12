@@ -2,6 +2,7 @@
 
 <launch>
 
+  <group ns='talos'>
     <!-- Launch Cartesian arm controller to get the point -->
     <include file="$(find astronaut_controllers)/launch/aruco_trajectory_cartesian_controller.launch"/>
     <!-- Launch head controller to look for the Qr code -->
@@ -16,4 +17,5 @@
     <node name="look_to_aruco_node" pkg="astronaut" type="look_to_aruco" output="screen"/>
 
 
+  </group>
 </launch>

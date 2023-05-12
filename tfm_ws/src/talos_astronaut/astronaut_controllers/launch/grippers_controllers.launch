@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <launch>
+
+  <group ns='talos'>
   <rosparam command="load" file="$(find astronaut_controllers)/config/astro_gripper/gripper_left.yaml" />
   <rosparam command="load" file="$(find astronaut_controllers)/config/astro_gripper/gripper_right.yaml" />
 
@@ -14,4 +16,5 @@
   <!-- Servicio para abrir y cerrar las manos -->
   <node name="hand_service_node" pkg="astronaut_controllers" type="gripper_service_astronaut" output="screen"/>
 
+  </group>
 </launch>
