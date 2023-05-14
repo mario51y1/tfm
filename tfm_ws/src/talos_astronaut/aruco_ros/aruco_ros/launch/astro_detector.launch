@@ -1,5 +1,5 @@
 <launch>
-
+  <group ns="talos">
     <arg name="markerId"        default="238"/>
     <arg name="markerSize"      default="0.10"/>    <!-- in m -->
     <!-- <arg name="eye"             default="left"/> -->
@@ -19,6 +19,6 @@
         <param name="marker_frame"       value="$(arg marker_frame)" />
         <param name="corner_refinement"  value="$(arg corner_refinement)" />
     </node>
-
+ </group>
 </launch>
 

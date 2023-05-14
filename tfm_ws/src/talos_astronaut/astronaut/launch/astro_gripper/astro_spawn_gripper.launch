@@ -8,7 +8,7 @@
   <!-- PAL Hardware gazebo config -->
   <include file="$(find astronaut)/launch/astro_controllers_configuration.launch">
     <arg name="robot" value="$(arg robot)" />
-    <arg name="prefix" value="$(find talos_hardware_gazebo)/config/sensors/" />
+  <!-- <arg name="prefix" value="$(find talos_hardware_gazebo)/config/sensors/" /> -->
     <arg name="hand_prefix" value="$(find astronaut)/config/" />
   </include>
 
