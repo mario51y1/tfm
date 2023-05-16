@@ -1,6 +1,6 @@
 right_arm_controller:
   type: "astronaut_controllers/ArucoTrajectoryController"
-  end_effector_link: "wrist_right_ft_tool_link"
+  end_effector_link: "gripper_right_base_link"
   base_link: "dummy_base_link"
   joints:
     - arm_right_1_joint

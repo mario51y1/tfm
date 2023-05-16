@@ -7,7 +7,8 @@
     <!-- Launch head controller to look for the Qr code -->
     <include file="$(find astronaut_controllers)/launch/head_controller.launch"/>
     <!-- Launch hands controller to grasp de objective -->
-    <include file="$(find astronaut_controllers)/launch/hey5_controller.launch"/>
+    <include file="$(find talos_control)/launch/grippers_controllers.launch" />
+  <!-- <include file="$(find astronaut_controllers)/launch/hey5_controller.launch"/> -->
     <!-- Launch Aruco detector -->
     <include file="$(find aruco_ros)/launch/astro_detector.launch"/>
     <!-- Rviz to visualize the camera and frames -->
