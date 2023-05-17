@@ -43,6 +43,6 @@
 
         <!-- default controllers -->
         <!-- <include file="$(find talos_controller_configuration)/launch/talos_default_controllers.launch"/> -->
-          <!-- <include file="$(find astronaut)/launch/talos_bringup_astro.launch" /> -->
+        <include file="$(find astronaut)/launch/talos_bringup_astro.launch" /> 
 
 </launch>
