@@ -22,11 +22,14 @@
 
    <rosparam command="load" file="$(find astronaut)/config/default_configuration_$(arg default_configuration_type).yaml" />
 
-   <rosparam command="load" file="$(find talos_description)/config/pids_gripper.yaml" />
-
+  
+  <rosparam command="load" file="$(find talos_description)/config/pids_talos.yaml"/>
+  <rosparam command="load" file="$(find talos_description)/config/default_configuration_talos.yaml"/>
+  <rosparam command="load" file="$(find talos_description)/config/pids_gripper.yaml" />
+  <rosparam command="load" file="$(find talos_description)/config/orbit_parameters.yaml"/>
   <!-- <rosparam command="load" file="$(find talos_description)/config/collision_parameters.yaml" /> -->
 
   <!-- PID gains -->
-  <rosparam command="load" file="$(find astronaut)/config/pids_astro.yaml"/>
+  <!--<rosparam command="load" file="$(find astronaut)/config/pids_astro.yaml"/>-->
 
 </launch>
