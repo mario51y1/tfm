@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="fr3">
+  <xacro:arg name="arm_id_1" default="panda_1" />
+  <xacro:arg name="arm_id_2" default="panda_2" />
+
+  <xacro:include filename="$(find franka_description)/robots/common/franka_arm.xacro"/>
+  <xacro:include filename="$(find franka_description)/robots/common/franka_hand.xacro"/>
+
+  <!-- box shaped table as base for the 2 Pandas -->
+  <link name="world"/>
+
+  <link name="base">
+    <inertial>
+      <origin xyz="0 0 0.5" />
+      <mass value="1.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.5"/>
+      <geometry>
+        <box size="1 2 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.5"/>
+      <geometry>
+        <box size="1 2 1" />
+      </geometry>
+    </collision>
+    
+    <gazebo reference="my_box">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+  </link>
+
+  <joint name="base_to_world" type="fixed">
+    <parent link="world"/>
+    <child link="base"/>
+    <origin xyz="0 0 1" rpy="0 0 0"/>
+  </joint>
+
+
+
+  <!-- right arm with gripper -->
+  <xacro:franka_arm arm_id="$(arg arm_id_1)" connected_to="base"  xyz="0.5 -0.5 0.5" rpy="0 ${pi/2} 0" safety_distance="0.03" gazebo="true" joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"/>
+  <xacro:franka_hand arm_id="$(arg arm_id_1)" gazebo="true" rpy="0 0 ${-pi/4}" connected_to="$(arg arm_id_1)_link8" safety_distance="0.03" />
+
+  <!-- left arm with gripper 
+auto-starting new master-->
+  <xacro:franka_arm arm_id="$(arg arm_id_2)" connected_to="base"  xyz="0.5 0.5 0.5" rpy="0 ${pi/2} 0" safety_distance="0.03" gazebo="true" joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"/>
+  <xacro:franka_hand arm_id="$(arg arm_id_2)" gazebo="true" rpy="0 0 ${-pi/4}" connected_to="$(arg arm_id_2)_link8" safety_distance="0.03" />
+</robot>
