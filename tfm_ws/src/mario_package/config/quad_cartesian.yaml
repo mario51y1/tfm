@@ -1,0 +1,19 @@
+arm_controller:
+  type: "astronaut_controllers/CartesianTrajectoryController"
+  base_link: "base"
+  end_effector_link: "panda_1_link8"
+  joints:
+    - panda_1_joint1
+    - panda_1_joint2
+    - panda_1_joint3
+    - panda_1_joint4
+    - panda_1_joint5
+    - panda_1_joint6
+    - panda_1_joint7
+  trajectory_duration: 9.0
+  goal_tolerance: 0.015
+  # kp_value: 1000.0
+  # kv_value: 0.1
+  kp_value: 300.0
+  kv_value: 0.1
+  

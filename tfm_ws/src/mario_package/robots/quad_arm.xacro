@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="fr3">
+  <xacro:arg name="arm_id_1" default="panda_1" />
+  <xacro:arg name="arm_id_2" default="panda_2" />
+  <xacro:arg name="arm_id_3" default="panda_3" />
+  <xacro:arg name="arm_id_4" default="panda_4" />
+
+  <xacro:include filename="$(find franka_description)/robots/common/franka_arm.xacro"/>
+  <xacro:include filename="$(find franka_description)/robots/common/franka_hand.xacro"/>
+
+  <xacro:include filename="$(find franka_description)/robots/common/utils.xacro" />
+  <!-- box shaped table as base for the 2 Pandas -->
+  <link name="world"/>
+
+  <link name="base">
+    <inertial>
+      <origin xyz="0 0 0.5" />
+      <mass value="1.0" />
+      <inertia  ixx="1.0" ixy="0.0"  ixz="0.0"  iyy="100.0"  iyz="0.0"  izz="1.0" />
+    </inertial>
+    <visual>
+      <origin xyz="0 0 0.5"/>
+      <geometry>
+        <box size="0.4 1 1" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0.5"/>
+      <geometry>
+        <box size="0.4 1 1" />
+      </geometry>
+    </collision>
+    
+    <gazebo reference="my_box">
+    <material>Gazebo/Blue</material>
+  </gazebo>
+  </link>
+
+  <joint name="base_to_world" type="fixed">
+    <parent link="world"/>
+    <child link="base"/>
+    <origin xyz="0 0 1" rpy="0 0 0"/>
+  </joint>
+
+
+
+  <!-- right arm with gripper -->
+  <xacro:franka_arm arm_id="$(arg arm_id_1)" connected_to="base"  xyz="0.2 -0.4 0.75" rpy="0 ${pi/2} 0" safety_distance="0.03" gazebo="true" joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"/>
+  <xacro:franka_arm arm_id="$(arg arm_id_2)" connected_to="base"  xyz="0.2 -0.4 0.2" rpy="0 ${pi/2} 0" safety_distance="0.03" gazebo="true" joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"/>
+
+  <!-- left arm with gripper 
+auto-starting new master-->
+  <xacro:franka_arm arm_id="$(arg arm_id_3)" connected_to="base"  xyz="0.2 0.4 0.75" rpy="0 ${pi/2} 0" safety_distance="0.03" gazebo="true" joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"/>
+  <xacro:franka_arm arm_id="$(arg arm_id_4)" connected_to="base"  xyz="0.2 0.4 0.2" rpy="0 ${pi/2} 0" safety_distance="0.03" gazebo="true" joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"/>
+
+
+      <gazebo>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+          <controlPeriod>0.001</controlPeriod>
+          <!-- <robotSimType>franka_gazebo/FrankaHWSim</robotSimType> -->
+        </plugin>
+        <self_collide>true</self_collide>
+      </gazebo>
+
+
+   <xacro:gazebo-joint joint="panda_1_joint1" transmission="hardware_interface/EffortJointInterface" />
+   <xacro:gazebo-joint joint="panda_1_joint2" transmission="hardware_interface/EffortJointInterface" />
+   <xacro:gazebo-joint joint="panda_1_joint3" transmission="hardware_interface/EffortJointInterface" />
+   <xacro:gazebo-joint joint="panda_1_joint4" transmission="hardware_interface/EffortJointInterface" />
+   <xacro:gazebo-joint joint="panda_1_joint5" transmission="hardware_interface/EffortJointInterface" />
+   <xacro:gazebo-joint joint="panda_1_joint6" transmission="hardware_interface/EffortJointInterface" />
+   <xacro:gazebo-joint joint="panda_1_joint7" transmission="hardware_interface/EffortJointInterface" />
+
+</robot>
