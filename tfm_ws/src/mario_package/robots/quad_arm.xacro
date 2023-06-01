@@ -55,20 +55,42 @@ auto-starting new master-->
 
 
       <gazebo>
-        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-          <controlPeriod>0.001</controlPeriod>
-          <robotSimType>franka_gazebo/FrankaHWSim</robotSimType> 
-        </plugin>
-        <self_collide>true</self_collide>
+        <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
       </gazebo>
 
 
-   <xacro:gazebo-joint joint="panda_1_joint1" transmission="hardware_interface/EffortJointInterface" />
-   <xacro:gazebo-joint joint="panda_1_joint2" transmission="hardware_interface/EffortJointInterface" />
-   <xacro:gazebo-joint joint="panda_1_joint3" transmission="hardware_interface/EffortJointInterface" />
-   <xacro:gazebo-joint joint="panda_1_joint4" transmission="hardware_interface/EffortJointInterface" />
-   <xacro:gazebo-joint joint="panda_1_joint5" transmission="hardware_interface/EffortJointInterface" />
-   <xacro:gazebo-joint joint="panda_1_joint6" transmission="hardware_interface/EffortJointInterface" />
-   <xacro:gazebo-joint joint="panda_1_joint7" transmission="hardware_interface/EffortJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_1)_joint1" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_1)_joint2" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_1)_joint3" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_1)_joint4" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_1)_joint5" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_1)_joint6" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_1)_joint7" transmission="hardware_interface/PositionJointInterface" />
+
+   <xacro:gazebo-joint joint="$(arg arm_id_2)_joint1" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_2)_joint2" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_2)_joint3" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_2)_joint4" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_2)_joint5" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_2)_joint6" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_2)_joint7" transmission="hardware_interface/PositionJointInterface" />
+
+   <xacro:gazebo-joint joint="$(arg arm_id_3)_joint1" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_3)_joint2" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_3)_joint3" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_3)_joint4" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_3)_joint5" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_3)_joint6" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_3)_joint7" transmission="hardware_interface/PositionJointInterface" />
+
+   <xacro:gazebo-joint joint="$(arg arm_id_4)_joint1" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_4)_joint2" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_4)_joint3" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_4)_joint4" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_4)_joint5" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_4)_joint6" transmission="hardware_interface/PositionJointInterface" />
+   <xacro:gazebo-joint joint="$(arg arm_id_4)_joint7" transmission="hardware_interface/PositionJointInterface" />
+
+
 
 </robot>

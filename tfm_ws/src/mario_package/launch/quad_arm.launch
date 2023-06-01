@@ -109,6 +109,7 @@
 
 
   <!-- spawns the controller after the robot was put into its initial joint pose -->
+
   <node pkg="controller_manager"
         type="spawner"
         name="my_controller_spawner"
@@ -119,4 +120,5 @@
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
   <node name="joint_state_publisher" type="joint_state_publisher" pkg="joint_state_publisher"/>
+
   </launch>
