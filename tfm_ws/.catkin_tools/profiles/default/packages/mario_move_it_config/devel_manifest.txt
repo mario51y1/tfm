@@ -1,0 +1,5 @@
+mario_move_it_config
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/mario_move_it_config/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/mario_move_it_config/share/mario_move_it_config/cmake/mario_move_it_configConfig-version.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/mario_move_it_config/cmake/mario_move_it_configConfig-version.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/mario_move_it_config/share/mario_move_it_config/cmake/mario_move_it_configConfig.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/mario_move_it_config/cmake/mario_move_it_configConfig.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/mario_move_it_config/lib/pkgconfig/mario_move_it_config.pc /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/pkgconfig/mario_move_it_config.pc

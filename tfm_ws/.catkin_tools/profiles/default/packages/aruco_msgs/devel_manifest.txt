@@ -1,0 +1,26 @@
+talos_astronaut/aruco_ros/aruco_msgs
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/gennodejs/ros/aruco_msgs/_index.js /home/mario51y1/Documents/TFM/tfm_ws/devel/share/gennodejs/ros/aruco_msgs/_index.js
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js /home/mario51y1/Documents/TFM/tfm_ws/devel/share/gennodejs/ros/aruco_msgs/msg/MarkerArray.js
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/gennodejs/ros/aruco_msgs/msg/_index.js /home/mario51y1/Documents/TFM/tfm_ws/devel/share/gennodejs/ros/aruco_msgs/msg/_index.js
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/gennodejs/ros/aruco_msgs/msg/Marker.js /home/mario51y1/Documents/TFM/tfm_ws/devel/share/gennodejs/ros/aruco_msgs/msg/Marker.js
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/roseus/ros/aruco_msgs/manifest.l /home/mario51y1/Documents/TFM/tfm_ws/devel/share/roseus/ros/aruco_msgs/manifest.l
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/roseus/ros/aruco_msgs/msg/Marker.l /home/mario51y1/Documents/TFM/tfm_ws/devel/share/roseus/ros/aruco_msgs/msg/Marker.l
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/roseus/ros/aruco_msgs/msg/MarkerArray.l /home/mario51y1/Documents/TFM/tfm_ws/devel/share/roseus/ros/aruco_msgs/msg/MarkerArray.l
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/aruco_msgs/cmake/aruco_msgsConfig-version.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/aruco_msgs/cmake/aruco_msgsConfig-version.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/aruco_msgs/cmake/aruco_msgsConfig.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/aruco_msgs/cmake/aruco_msgsConfig.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/aruco_msgs/cmake/aruco_msgs-msg-extras.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/aruco_msgs/cmake/aruco_msgs-msg-extras.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/aruco_msgs/cmake/aruco_msgs-msg-paths.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/aruco_msgs/cmake/aruco_msgs-msg-paths.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/common-lisp/ros/aruco_msgs/msg/aruco_msgs-msg.asd /home/mario51y1/Documents/TFM/tfm_ws/devel/share/common-lisp/ros/aruco_msgs/msg/aruco_msgs-msg.asd
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp /home/mario51y1/Documents/TFM/tfm_ws/devel/share/common-lisp/ros/aruco_msgs/msg/Marker.lisp
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/common-lisp/ros/aruco_msgs/msg/_package_Marker.lisp /home/mario51y1/Documents/TFM/tfm_ws/devel/share/common-lisp/ros/aruco_msgs/msg/_package_Marker.lisp
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/common-lisp/ros/aruco_msgs/msg/_package_MarkerArray.lisp /home/mario51y1/Documents/TFM/tfm_ws/devel/share/common-lisp/ros/aruco_msgs/msg/_package_MarkerArray.lisp
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/common-lisp/ros/aruco_msgs/msg/_package.lisp /home/mario51y1/Documents/TFM/tfm_ws/devel/share/common-lisp/ros/aruco_msgs/msg/_package.lisp
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp /home/mario51y1/Documents/TFM/tfm_ws/devel/share/common-lisp/ros/aruco_msgs/msg/MarkerArray.lisp
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/include/aruco_msgs/MarkerArray.h /home/mario51y1/Documents/TFM/tfm_ws/devel/include/aruco_msgs/MarkerArray.h
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/include/aruco_msgs/Marker.h /home/mario51y1/Documents/TFM/tfm_ws/devel/include/aruco_msgs/Marker.h
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/lib/python3/dist-packages/aruco_msgs/__init__.py /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/python3/dist-packages/aruco_msgs/__init__.py
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/lib/python3/dist-packages/aruco_msgs/msg/__init__.py /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/python3/dist-packages/aruco_msgs/msg/__init__.py
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/lib/python3/dist-packages/aruco_msgs/msg/_Marker.py /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/python3/dist-packages/aruco_msgs/msg/_Marker.py
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/lib/python3/dist-packages/aruco_msgs/msg/_MarkerArray.py /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/python3/dist-packages/aruco_msgs/msg/_MarkerArray.py
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_msgs/lib/pkgconfig/aruco_msgs.pc /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/pkgconfig/aruco_msgs.pc

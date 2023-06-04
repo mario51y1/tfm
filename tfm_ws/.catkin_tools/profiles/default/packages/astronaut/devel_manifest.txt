@@ -1,0 +1,6 @@
+talos_astronaut/astronaut
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/astronaut/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/astronaut/share/astronaut/cmake/astronautConfig.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/astronaut/cmake/astronautConfig.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/astronaut/share/astronaut/cmake/astronautConfig-version.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/astronaut/cmake/astronautConfig-version.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/astronaut/lib/pkgconfig/astronaut.pc /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/pkgconfig/astronaut.pc
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/astronaut/lib/astronaut/look_to_aruco /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/astronaut/look_to_aruco

@@ -1,0 +1,16 @@
+talos_astronaut/aruco_ros/aruco_ros
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/share/aruco_ros/docs/ArucoThresholdConfig-usage.dox /home/mario51y1/Documents/TFM/tfm_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig-usage.dox
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/share/aruco_ros/docs/ArucoThresholdConfig.wikidoc /home/mario51y1/Documents/TFM/tfm_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.wikidoc
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/share/aruco_ros/docs/ArucoThresholdConfig.dox /home/mario51y1/Documents/TFM/tfm_ws/devel/share/aruco_ros/docs/ArucoThresholdConfig.dox
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/share/aruco_ros/cmake/aruco_rosConfig.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/aruco_ros/cmake/aruco_rosConfig.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/share/aruco_ros/cmake/aruco_rosConfig-version.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/aruco_ros/cmake/aruco_rosConfig-version.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/include/aruco_ros/ArucoThresholdConfig.h /home/mario51y1/Documents/TFM/tfm_ws/devel/include/aruco_ros/ArucoThresholdConfig.h
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/lib/libaruco_ros_utils.so /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/libaruco_ros_utils.so
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/lib/python3/dist-packages/aruco_ros/__init__.py /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/python3/dist-packages/aruco_ros/__init__.py
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/lib/python3/dist-packages/aruco_ros/cfg/__init__.py /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/__init__.py
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/python3/dist-packages/aruco_ros/cfg/ArucoThresholdConfig.py
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/lib/pkgconfig/aruco_ros.pc /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/pkgconfig/aruco_ros.pc
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/lib/aruco_ros/marker_publisher /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/aruco_ros/marker_publisher
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/lib/aruco_ros/single /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/aruco_ros/single
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco_ros/lib/aruco_ros/double /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/aruco_ros/double

@@ -1,0 +1,7 @@
+franka_hw
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_hw/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_hw/share/franka_hw/cmake/franka_hwConfig-version.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/franka_hw/cmake/franka_hwConfig-version.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_hw/share/franka_hw/cmake/franka_hwConfig.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/franka_hw/cmake/franka_hwConfig.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_hw/lib/libfranka_hw.so /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/libfranka_hw.so
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_hw/lib/libfranka_control_services.so /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/libfranka_control_services.so
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_hw/lib/pkgconfig/franka_hw.pc /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/pkgconfig/franka_hw.pc

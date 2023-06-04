@@ -1,0 +1,5 @@
+mario_package
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/mario_package/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/mario_package/share/mario_package/cmake/mario_packageConfig.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/mario_package/cmake/mario_packageConfig.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/mario_package/share/mario_package/cmake/mario_packageConfig-version.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/mario_package/cmake/mario_packageConfig-version.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/mario_package/lib/pkgconfig/mario_package.pc /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/pkgconfig/mario_package.pc

@@ -1,0 +1,8 @@
+franka_control
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_control/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_control/share/franka_control/cmake/franka_controlConfig.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/franka_control/cmake/franka_controlConfig.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_control/share/franka_control/cmake/franka_controlConfig-version.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/franka_control/cmake/franka_controlConfig-version.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_control/lib/libfranka_state_controller.so /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/libfranka_state_controller.so
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_control/lib/franka_control/franka_combined_control_node /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/franka_control/franka_combined_control_node
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_control/lib/franka_control/franka_control_node /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/franka_control/franka_control_node
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/franka_control/lib/pkgconfig/franka_control.pc /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/pkgconfig/franka_control.pc

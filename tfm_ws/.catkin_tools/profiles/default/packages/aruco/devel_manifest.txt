@@ -1,0 +1,7 @@
+talos_astronaut/aruco_ros/aruco
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco/share/aruco/cmake/arucoConfig.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/aruco/cmake/arucoConfig.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco/share/aruco/cmake/arucoConfig-version.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/aruco/cmake/arucoConfig-version.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco/lib/libaruco.so /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/libaruco.so
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco/lib/aruco/optimalmarkers /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/aruco/optimalmarkers
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/aruco/lib/pkgconfig/aruco.pc /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/pkgconfig/aruco.pc

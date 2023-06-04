@@ -1,0 +1,6 @@
+orbit_robot_pkg
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/orbit_robot_pkg/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/orbit_robot_pkg/share/orbit_robot_pkg/cmake/orbit_robot_pkgConfig.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/orbit_robot_pkg/cmake/orbit_robot_pkgConfig.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/orbit_robot_pkg/share/orbit_robot_pkg/cmake/orbit_robot_pkgConfig-version.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/orbit_robot_pkg/cmake/orbit_robot_pkgConfig-version.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/orbit_robot_pkg/lib/libOrbit_robot_pkg_plugin.so /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/libOrbit_robot_pkg_plugin.so
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/orbit_robot_pkg/lib/pkgconfig/orbit_robot_pkg.pc /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/pkgconfig/orbit_robot_pkg.pc

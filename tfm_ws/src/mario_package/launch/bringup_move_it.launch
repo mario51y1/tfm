@@ -21,5 +21,4 @@
     <include file="$(find mario_move_it_config)/launch/moveit_rviz.launch">
         <arg name="rviz_config" value="$(find mario_move_it_config)/launch/moveit.rviz" />
     </include>
-
 </launch>

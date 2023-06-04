@@ -1,0 +1,5 @@
+talos_description
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/talos_description/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/talos_description/share/talos_description/cmake/talos_descriptionConfig.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/talos_description/cmake/talos_descriptionConfig.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/talos_description/share/talos_description/cmake/talos_descriptionConfig-version.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/talos_description/cmake/talos_descriptionConfig-version.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/talos_description/lib/pkgconfig/talos_description.pc /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/pkgconfig/talos_description.pc

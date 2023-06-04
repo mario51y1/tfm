@@ -1,0 +1,2 @@
+moveit_resources/moveit_resources
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/moveit_resources/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock

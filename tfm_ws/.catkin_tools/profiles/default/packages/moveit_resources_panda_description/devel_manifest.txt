@@ -1,0 +1,6 @@
+moveit_resources/panda_description
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/moveit_resources_panda_description/cmake.lock /home/mario51y1/Documents/TFM/tfm_ws/devel/./cmake.lock
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/moveit_resources_panda_description/share/moveit_resources_panda_description/robots/panda.urdf /home/mario51y1/Documents/TFM/tfm_ws/devel/share/moveit_resources_panda_description/robots/panda.urdf
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/moveit_resources_panda_description/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig-version.cmake /home/mario51y1/Documents/TFM/tfm_ws/devel/share/moveit_resources_panda_description/cmake/moveit_resources_panda_descriptionConfig-version.cmake
+/home/mario51y1/Documents/TFM/tfm_ws/devel/.private/moveit_resources_panda_description/lib/pkgconfig/moveit_resources_panda_description.pc /home/mario51y1/Documents/TFM/tfm_ws/devel/lib/pkgconfig/moveit_resources_panda_description.pc
