@@ -7,3 +7,7 @@ prerequisistes on new install:
 
 sudo apt install ros-noetic-libfranka ros-noetic-franka-ros
 
+Moveit install
+https://ros-planning.github.io/moveit_tutorials/doc/getting_started/getting_started.html
+
+

@@ -13,4 +13,6 @@
 
     <!-- Spawn The robot over the robot_description param-->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model quad_arm"/>
+
+
 </launch>

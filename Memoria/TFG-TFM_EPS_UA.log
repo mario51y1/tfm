@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2023.5.12)  12 MAY 2023 20:16
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019/Debian) (preloaded format=xelatex 2023.5.12)  4 JUN 2023 23:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1595,7 +1595,11 @@ Package glossaries Info: Writing glossary file TFG-TFM_EPS_UA.glo on input line 
 \openout6 = `TFG-TFM_EPS_UA.acn'.
 
 Package glossaries Info: Writing glossary file TFG-TFM_EPS_UA.acn on input line 89.
- (./anexos/acronimos.tex) (./TFG-TFM_EPS_UA.aux)
+ (./anexos/acronimos.tex) (./TFG-TFM_EPS_UA.aux
+LaTeX Info: Redefining \rmfamily on input line 30.
+LaTeX Info: Redefining \sffamily on input line 30.
+LaTeX Info: Redefining \ttfamily on input line 30.
+)
 \openout1 = `TFG-TFM_EPS_UA.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
@@ -1752,12 +1756,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 96.
 LaTeX Info: Redefining \pageref on input line 96.
 LaTeX Info: Redefining \nameref on input line 96.
+ (./TFG-TFM_EPS_UA.out) (./TFG-TFM_EPS_UA.out)
 \@outlinefile=\write7
 \openout7 = `TFG-TFM_EPS_UA.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           Using `bookmark' together with `hyperref' is recommended,
@@ -1767,7 +1768,7 @@ Class scrbook Info: loading recommended package `bookmark'.
 (scrbook)           you can avoid this message adding:
 (scrbook)             \usepackage{bookmark}
 (scrbook)           before \begin{document} on input line 96.
-(/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
+ (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2019/12/03 v1.28 PDF bookmarks (HO)
  (/usr/share/texlive/texmf-dist/tex/latex/bookmark/bkm-dvipdfm.def
 File: bkm-dvipdfm.def 2019/12/03 v1.28 bookmark driver for dvipdfm (HO)
@@ -1781,11 +1782,7 @@ Package scrhack Info: undefining \float@addtolists on input line 96.
 LaTeX Info: Redefining \rmfamily on input line 96.
 LaTeX Info: Redefining \sffamily on input line 96.
 LaTeX Info: Redefining \ttfamily on input line 96.
-(./capitulos/preliminaresconagradecimientos.tex
-
-Package natbib Warning: Citation `UNE50136:97' on page i undefined on input line 12.
-
-[1
+(./capitulos/preliminaresconagradecimientos.tex [1
 
 \openout4 = `TFG-TFM_EPS_UA.ist'.
 
@@ -1820,15 +1817,24 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ] [6
 
 
-] [7
-
-
-] [8
+]) (./TFG-TFM_EPS_UA.toc
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+ [7
 
 
 ])
 \tf@toc=\write8
 \openout8 = `TFG-TFM_EPS_UA.toc'.
+
+ [8] (./TFG-TFM_EPS_UA.lof
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+)
+\tf@lof=\write9
+\openout9 = `TFG-TFM_EPS_UA.lof'.
 
  [9
 
@@ -1836,28 +1842,22 @@ File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 ] [10
 
 
-]
-\tf@lof=\write9
-\openout9 = `TFG-TFM_EPS_UA.lof'.
+] (./TFG-TFM_EPS_UA.lot
+LaTeX Info: Redefining \rmfamily on input line 1.
+LaTeX Info: Redefining \sffamily on input line 1.
+LaTeX Info: Redefining \ttfamily on input line 1.
+)
+\tf@lot=\write10
+\openout10 = `TFG-TFM_EPS_UA.lot'.
 
  [11] [12
 
 
-]
-\tf@lot=\write10
-\openout10 = `TFG-TFM_EPS_UA.lot'.
-
- [13] [14
-
-
-]
-
-Package hyperref Warning: old lol file detected, not used; run LaTeX again.
-
+] (./TFG-TFM_EPS_UA.lol)
 \tf@lol=\write11
 \openout11 = `TFG-TFM_EPS_UA.lol'.
 
-[15] [16
+ [13] [14
 
 
 ] (./capitulos/Introduccion.tex
@@ -1868,7 +1868,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 10--12
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 15--17
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
 
  []
 
@@ -1876,9 +1876,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--17
 
 
 ]
-LaTeX Info: Redefining \rmfamily on input line 63.
-LaTeX Info: Redefining \sffamily on input line 63.
-LaTeX Info: Redefining \ttfamily on input line 63.
+LaTeX Info: Redefining \rmfamily on input line 62.
+LaTeX Info: Redefining \sffamily on input line 62.
+LaTeX Info: Redefining \ttfamily on input line 62.
  [2] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2019/09/10 1.8c listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
@@ -1900,85 +1900,62 @@ File: lstlang3.sty 2019/09/10 1.8c listings language file
 ) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
 )
-LaTeX Info: Redefining \rmfamily on input line 100.
-LaTeX Info: Redefining \sffamily on input line 100.
-LaTeX Info: Redefining \ttfamily on input line 100.
+LaTeX Info: Redefining \rmfamily on input line 99.
+LaTeX Info: Redefining \sffamily on input line 99.
+LaTeX Info: Redefining \ttfamily on input line 99.
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 101--103
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
 
  []
 
 
-Package natbib Warning: Citation `Shaw1996' on page 4 undefined on input line 103.
-
-
-Package natbib Warning: Citation `Shaw1996' on page 4 undefined on input line 103.
-
-
-Package natbib Warning: Citation `Shaw1996' on page 4 undefined on input line 103.
-
-
-Package natbib Warning: Citation `Shaw1996' on page 4 undefined on input line 103.
-
-
-Package natbib Warning: Citation `Shaw1996' on page 4 undefined on input line 103.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 103--105
+Underfull \hbox (badness 10000) in paragraph at lines 109--111
 
  []
 
 
-Package natbib Warning: Citation `Akyildiz2005' on page 4 undefined on input line 105.
-
-
-Package natbib Warning: Citation `Akyildiz2005' on page 4 undefined on input line 105.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 105--107
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
 
  []
 
 
-Package natbib Warning: Citation `Barkan1995' on page 4 undefined on input line 107.
-
-
-Package natbib Warning: Citation `Leighton2012' on page 4 undefined on input line 107.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--120
+Underfull \hbox (badness 10000) in paragraph at lines 125--127
 
  []
 
-LaTeX Info: Redefining \rmfamily on input line 137.
-LaTeX Info: Redefining \sffamily on input line 137.
-LaTeX Info: Redefining \ttfamily on input line 137.
-[4]
-Underfull \hbox (badness 10000) in paragraph at lines 166--168
+
+Underfull \vbox (badness 1221) has occurred while \output is active []
+
+LaTeX Info: Redefining \rmfamily on input line 133.
+LaTeX Info: Redefining \sffamily on input line 133.
+LaTeX Info: Redefining \ttfamily on input line 133.
+ [4]
+LaTeX Info: Redefining \rmfamily on input line 170.
+LaTeX Info: Redefining \sffamily on input line 170.
+LaTeX Info: Redefining \ttfamily on input line 170.
+ [5]
+Underfull \hbox (badness 10000) in paragraph at lines 173--175
 
  []
 
-LaTeX Info: Redefining \rmfamily on input line 172.
-LaTeX Info: Redefining \sffamily on input line 172.
-LaTeX Info: Redefining \ttfamily on input line 172.
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 174--176
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--183
 
  []
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 176.
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input line 183.
 
-Overfull \hbox (2.34543pt too wide) in paragraph at lines 176--176
+Overfull \hbox (2.34543pt too wide) in paragraph at lines 183--183
 [][][] 
  []
 
 
-Overfull \hbox (2.34543pt too wide) in paragraph at lines 176--176
+Overfull \hbox (2.34543pt too wide) in paragraph at lines 183--183
 [][][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 193--195
 
  []
 
@@ -1987,19 +1964,221 @@ LaTeX Info: Redefining \rmfamily on input line 8.
 LaTeX Info: Redefining \sffamily on input line 8.
 LaTeX Info: Redefining \ttfamily on input line 8.
  [6]
-chapter 2.
-[7
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+ [7] [8
 
 
 ]
-LaTeX Info: Redefining \rmfamily on input line 121.
-LaTeX Info: Redefining \sffamily on input line 121.
-LaTeX Info: Redefining \ttfamily on input line 121.
- [8]) (./TFG-TFM_EPS_UA.bbl
+chapter 2.
+[9]
+LaTeX Info: Redefining \rmfamily on input line 113.
+LaTeX Info: Redefining \sffamily on input line 113.
+LaTeX Info: Redefining \ttfamily on input line 113.
+ [10]) (./capitulos/objetivos.tex
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+ [11] [12
+
+
+]
+chapter 3.
+[13]
+Underfull \vbox (badness 2478) has occurred while \output is active []
+
+LaTeX Info: Redefining \rmfamily on input line 113.
+LaTeX Info: Redefining \sffamily on input line 113.
+LaTeX Info: Redefining \ttfamily on input line 113.
+ [14]
+LaTeX Font Info:    Calculating math sizes for size <9.85492> on input line 127.
+) (./capitulos/metodologia.tex
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+ [15]
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+ [16]
+chapter 4.
+Missing character: There is no º in font cmmi10!
+Missing character: There is no º in font cmmi10!
+Missing character: There is no º in font cmmi10!
+Missing character: There is no º in font cmmi10!
+Missing character: There is no º in font cmmi10!
+Missing character: There is no º in font cmmi10!
+Missing character: There is no º in font cmmi10!
+Missing character: There is no º in font cmmi10!
+Missing character: There is no º in font cmmi10!
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./capitulos/desarrollo.tex [17
+
+
+]
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+ [18]
+chapter 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--29
+
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2019/09/10 1.8c (Carsten Heinz)
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 44.
+ [19
+
+
+] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang2.sty
+File: lstlang2.sty 2019/09/10 1.8c listings language file
+)
+LaTeX Info: Redefining \rmfamily on input line 105.
+LaTeX Info: Redefining \sffamily on input line 105.
+LaTeX Info: Redefining \ttfamily on input line 105.
+ [20] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+LaTeX Info: Redefining \rmfamily on input line 166.
+LaTeX Info: Redefining \sffamily on input line 166.
+LaTeX Info: Redefining \ttfamily on input line 166.
+ [21]
+LaTeX Info: Redefining \rmfamily on input line 177.
+LaTeX Info: Redefining \sffamily on input line 177.
+LaTeX Info: Redefining \ttfamily on input line 177.
+ [22] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+)
+LaTeX Info: Redefining \rmfamily on input line 239.
+LaTeX Info: Redefining \sffamily on input line 239.
+LaTeX Info: Redefining \ttfamily on input line 239.
+ [23]
+LaTeX Info: Redefining \rmfamily on input line 301.
+LaTeX Info: Redefining \sffamily on input line 301.
+LaTeX Info: Redefining \ttfamily on input line 301.
+ [24] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2019/09/10 1.8c listings language file
+) (./archivos/ejemplos/holamundo.cpp) (./archivos/ejemplos/holamundo.py) (./archivos/ejemplos/holamundo.m)) (./capitulos/resultados.tex
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+ [25] [26
+
+
+]
+chapter 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--17
+
+ []
+
+===== Image 'archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure0' is up-to-date. ======
+File: archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure0.pdf Graphic file (type pdf)
+<use archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure0.pdf>
+===== Image 'archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure1' is up-to-date. ======
+File: archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure1.pdf Graphic file (type pdf)
+<use archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure1.pdf>
+[27]
+LaTeX Info: Redefining \rmfamily on input line 87.
+LaTeX Info: Redefining \sffamily on input line 87.
+LaTeX Info: Redefining \ttfamily on input line 87.
+ [28]
+LaTeX Info: Redefining \rmfamily on input line 87.
+LaTeX Info: Redefining \sffamily on input line 87.
+LaTeX Info: Redefining \ttfamily on input line 87.
+ [29]
+LaTeX Info: Redefining \rmfamily on input line 87.
+LaTeX Info: Redefining \sffamily on input line 87.
+LaTeX Info: Redefining \ttfamily on input line 87.
+ [30] (./archivos/ejemplos/perjudicialesopticacentro.tex
+===== Image 'archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure2' is up-to-date. ======
+File: archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure2.pdf Graphic file (type pdf)
+<use archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure2.pdf>
+)
+===== Image 'archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure3' is up-to-date. ======
+File: archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure3.pdf Graphic file (type pdf)
+<use archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure3.pdf>
+LaTeX Info: Redefining \rmfamily on input line 159.
+LaTeX Info: Redefining \sffamily on input line 159.
+LaTeX Info: Redefining \ttfamily on input line 159.
+[31
+
+] (./archivos/ejemplos/polarnorm.tex
+===== Image 'archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure4' is up-to-date. ======
+File: archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure4.pdf Graphic file (type pdf)
+<use archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure4.pdf>
+)
+Overfull \hbox (47.22083pt too wide) in paragraph at lines 176--178
+[]\TU/lmr/m/n/10.95 Gracias a la herramienta \TU/lmr/m/it/10.95 matlab2tikz \TU/lmr/m/n/10.95 ([]$[][][][][] [][][] [][] [] [][][][][][][][][][] [] [][][][] [] [][][][][][][][][][][][][] [] [][][][][][][][][][][][] []
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 178.
+LaTeX Info: Redefining \sffamily on input line 178.
+LaTeX Info: Redefining \ttfamily on input line 178.
+[32] (./archivos/ejemplos/ParedFina.tex
+===== Image 'archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure5' is up-to-date. ======
+File: archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure5.pdf Graphic file (type pdf)
+<use archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure5.pdf>
+) (./archivos/ejemplos/2D-3314hz.tex
+===== Image 'archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure6' is up-to-date. ======
+File: archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure6.pdf Graphic file (type pdf)
+<use archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure6.pdf>
+)
+LaTeX Info: Redefining \rmfamily on input line 205.
+LaTeX Info: Redefining \sffamily on input line 205.
+LaTeX Info: Redefining \ttfamily on input line 205.
+ [33]
+===== Image 'archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure7' is up-to-date. ======
+File: archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure7.pdf Graphic file (type pdf)
+<use archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure7.pdf>
+===== Image 'archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure8' is up-to-date. ======
+File: archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure8.pdf Graphic file (type pdf)
+<use archivos/figuras-procesadas/TFG-TFM_EPS_UA-figure8.pdf>
+LaTeX Info: Redefining \rmfamily on input line 281.
+LaTeX Info: Redefining \sffamily on input line 281.
+LaTeX Info: Redefining \ttfamily on input line 281.
+[34]) (./capitulos/conclusiones.tex
+LaTeX Info: Redefining \rmfamily on input line 8.
+LaTeX Info: Redefining \sffamily on input line 8.
+LaTeX Info: Redefining \ttfamily on input line 8.
+ [35] [36
+
+
+]
+chapter 7.
+[37]
+Overfull \hbox (10.95pt too wide) in paragraph at lines 92--99
+[]\TU/lmr/m/n/10.95 donde:[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--99
+
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 124.
+LaTeX Info: Redefining \sffamily on input line 124.
+LaTeX Info: Redefining \ttfamily on input line 124.
+[38]) (./TFG-TFM_EPS_UA.bbl
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
- [9] [10
+ [39] [40
 
 
 ]
@@ -2016,14 +2195,14 @@ Missing character: There is no с in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no с in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no и in font [lmroman10-regular]:mapping=tex-text;!
 Missing character: There is no к in font [lmroman10-regular]:mapping=tex-text;!
-[11] [12])
+[41] [42])
 No file TFG-TFM_EPS_UA.acr.
-(./anexos/anexo_I.tex [13] [14
+(./anexos/anexo_I.tex [43] [44
 
 
 ]
 chapter A.
-) (./anexos/anexo_2.tex [15] [16
+) (./anexos/anexo_2.tex [45] [46
 
 
 ]
@@ -2033,7 +2212,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-[17]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
@@ -2041,7 +2220,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 LaTeX Info: Redefining \rmfamily on input line 21.
 LaTeX Info: Redefining \sffamily on input line 21.
 LaTeX Info: Redefining \ttfamily on input line 21.
-[18
+[48
 
 
 ]
@@ -2052,7 +2231,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 23--24
 LaTeX Info: Redefining \rmfamily on input line 25.
 LaTeX Info: Redefining \sffamily on input line 25.
 LaTeX Info: Redefining \ttfamily on input line 25.
-[19
+[49
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 29--30
@@ -2063,15 +2242,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 29--30
 LaTeX Info: Redefining \rmfamily on input line 10.
 LaTeX Info: Redefining \sffamily on input line 10.
 LaTeX Info: Redefining \ttfamily on input line 10.
- [20
+ [50
 
 
 ]
 chapter C.
 )
-
-Package natbib Warning: There were undefined citations.
-
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -2107,7 +2283,7 @@ braces):
 >  {spanish/localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {spanish/Localnumeral}  =>  {polyglossia@C@localnumeral}
 >  {spanish/totalhyphenmin}  =>  {5}.
-[21
+ [51
 
 
 ]
@@ -2117,34 +2293,19 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
 LaTeX Info: Redefining \rmfamily on input line 30.
 LaTeX Info: Redefining \sffamily on input line 30.
 LaTeX Info: Redefining \ttfamily on input line 30.
-
-
-Package natbib Warning: Citation(s) may have changed.
-(natbib)                Rerun to get citations correct.
-
 )
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
-
-
-Package rerunfilecheck Warning: File `TFG-TFM_EPS_UA.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `TFG-TFM_EPS_UA.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  D41D8CD98F00B204E9800998ECF8427E;0.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package rerunfilecheck Info: File `TFG-TFM_EPS_UA.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 59583 strings out of 479819
- 1377693 string characters out of 5895846
- 2283966 words of memory out of 5000000
- 75533 multiletter control sequences out of 15000+600000
- 559137 words of font info for 153 fonts, out of 8000000 for 9000
+ 63648 strings out of 479819
+ 1439972 string characters out of 5895846
+ 2506744 words of memory out of 5000000
+ 79509 multiletter control sequences out of 15000+600000
+ 567962 words of font info for 196 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 81i,21n,150p,10206b,2340s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 81i,21n,150p,10206b,3926s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on TFG-TFM_EPS_UA.xdv (37 pages, 378624 bytes).
+Output written on TFG-TFM_EPS_UA.xdv (65 pages, 999532 bytes).
