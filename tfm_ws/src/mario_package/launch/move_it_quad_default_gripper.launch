@@ -9,7 +9,7 @@
     </include>
 
     <!-- Find my robot Description-->
-    <param name="robot_description" command="$(find xacro)/xacro  '$(find mario_package)/robots/quad_arm.xacro'" />
+    <param name="robot_description" command="$(find xacro)/xacro  '$(find mario_package)/robots/quad_arm_default_gripper.xacro'" />
 
     <!-- Spawn The robot over the robot_description param-->
     <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -param robot_description -model quad_arm"/>

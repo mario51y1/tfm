@@ -1,0 +1,184 @@
+panda_arm_1_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - panda_1_joint1
+    - panda_1_joint2
+    - panda_1_joint3
+    - panda_1_joint4
+    - panda_1_joint5
+    - panda_1_joint6
+    - panda_1_joint7
+  gains:
+    panda_1_joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_1_joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_1_joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_1_joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_1_joint5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_1_joint6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_1_joint7:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+panda_arm_2_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - panda_2_joint1
+    - panda_2_joint2
+    - panda_2_joint3
+    - panda_2_joint4
+    - panda_2_joint5
+    - panda_2_joint6
+    - panda_2_joint7
+  gains:
+    panda_2_joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_2_joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_2_joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_2_joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_2_joint5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_2_joint6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_2_joint7:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+panda_arm_3_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - panda_3_joint1
+    - panda_3_joint2
+    - panda_3_joint3
+    - panda_3_joint4
+    - panda_3_joint5
+    - panda_3_joint6
+    - panda_3_joint7
+  gains:
+    panda_3_joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_3_joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_3_joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_3_joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_3_joint5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_3_joint6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_3_joint7:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+panda_arm_4_controller:
+  type: effort_controllers/JointTrajectoryController
+  joints:
+    - panda_4_joint1
+    - panda_4_joint2
+    - panda_4_joint3
+    - panda_4_joint4
+    - panda_4_joint5
+    - panda_4_joint6
+    - panda_4_joint7
+  gains:
+    panda_4_joint1:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_4_joint2:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_4_joint3:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_4_joint4:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_4_joint5:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_4_joint6:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
+    panda_4_joint7:
+      p: 100
+      d: 1
+      i: 1
+      i_clamp: 1
