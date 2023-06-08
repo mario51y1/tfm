@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <launch>
+
     <!-- Run the main MoveIt executable with trajectory execution -->
     <include file="$(find mario_move_it_config)/launch/move_group.launch">
         <arg name="allow_trajectory_execution" value="true" />

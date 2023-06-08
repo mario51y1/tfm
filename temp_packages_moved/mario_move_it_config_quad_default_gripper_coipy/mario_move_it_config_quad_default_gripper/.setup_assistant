@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: mario_package
+    relative_path: robots/quad_arm_default_gripper.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/fr3.srdf
+  CONFIG:
+    author_name: mario
+    author_email: marionieto51@gmail.com
+    generated_timestamp: 1686178241

@@ -1,0 +1,125 @@
+joint_state_controller:
+    type: joint_state_controller/JointStateController
+    publish_rate: 50
+panda_1_trajectory_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+        - panda_1_joint1
+        - panda_1_joint2
+        - panda_1_joint3
+        - panda_1_joint4
+        - panda_1_joint5
+        - panda_1_joint6
+        - panda_1_joint7
+    constraints:
+        goal_time: 0.6
+        stopped_velocity_tolerance: 0.05
+        panda_1_joint1: {trajectory: 0.1, goal: 0.1}
+        panda_1_joint2: {trajectory: 0.1, goal: 0.1}
+        panda_1_joint3: {trajectory: 0.1, goal: 0.1}
+        panda_1_joint4: {trajectory: 0.1, goal: 0.1}
+        panda_1_joint5: {trajectory: 0.1, goal: 0.1}
+        panda_1_joint6: {trajectory: 0.1, goal: 0.1}
+        panda_1_joint7: {trajectory: 0.1, goal: 0.1}
+    stop_trajectory_duration: 0.5
+    state_publish_rate:  25
+    action_monitor_rate: 10
+
+panda_2_trajectory_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+        - panda_2_joint1
+        - panda_2_joint2
+        - panda_2_joint3
+        - panda_2_joint4
+        - panda_2_joint5
+        - panda_2_joint6
+        - panda_2_joint7
+    constraints:
+        goal_time: 0.6
+        stopped_velocity_tolerance: 0.05
+        panda_2_joint1: {trajectory: 0.1, goal: 0.1}
+        panda_2_joint2: {trajectory: 0.1, goal: 0.1}
+        panda_2_joint3: {trajectory: 0.1, goal: 0.1}
+        panda_2_joint4: {trajectory: 0.1, goal: 0.1}
+        panda_2_joint5: {trajectory: 0.1, goal: 0.1}
+        panda_2_joint6: {trajectory: 0.1, goal: 0.1}
+        panda_2_joint7: {trajectory: 0.1, goal: 0.1}
+    stop_trajectory_duration: 0.5
+    state_publish_rate:  25
+    action_monitor_rate: 10
+
+panda_3_trajectory_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+        - panda_3_joint1
+        - panda_3_joint2
+        - panda_3_joint3
+        - panda_3_joint4
+        - panda_3_joint5
+        - panda_3_joint6
+        - panda_3_joint7
+    constraints:
+        goal_time: 0.6
+        stopped_velocity_tolerance: 0.05
+        panda_3_joint1: {trajectory: 0.1, goal: 0.1}
+        panda_3_joint2: {trajectory: 0.1, goal: 0.1}
+        panda_3_joint3: {trajectory: 0.1, goal: 0.1}
+        panda_3_joint4: {trajectory: 0.1, goal: 0.1}
+        panda_3_joint5: {trajectory: 0.1, goal: 0.1}
+        panda_3_joint6: {trajectory: 0.1, goal: 0.1}
+        panda_3_joint7: {trajectory: 0.1, goal: 0.1}
+    stop_trajectory_duration: 0.5
+    state_publish_rate:  25
+    action_monitor_rate: 10
+
+panda_4_trajectory_controller:
+    type: "position_controllers/JointTrajectoryController"
+    joints:
+        - panda_4_joint1
+        - panda_4_joint2
+        - panda_4_joint3
+        - panda_4_joint4
+        - panda_4_joint5
+        - panda_4_joint6
+        - panda_4_joint7
+    constraints:
+        goal_time: 0.6
+        stopped_velocity_tolerance: 0.05
+        panda_4_joint1: {trajectory: 0.1, goal: 0.1}
+        panda_4_joint2: {trajectory: 0.1, goal: 0.1}
+        panda_4_joint3: {trajectory: 0.1, goal: 0.1}
+        panda_4_joint4: {trajectory: 0.1, goal: 0.1}
+        panda_4_joint5: {trajectory: 0.1, goal: 0.1}
+        panda_4_joint6: {trajectory: 0.1, goal: 0.1}
+        panda_4_joint7: {trajectory: 0.1, goal: 0.1}
+    stop_trajectory_duration: 0.5
+    state_publish_rate:  25
+    action_monitor_rate: 10
+
+
+hand_1_controller:
+    type: "effort_controllers/JointTrajectoryController"
+    joints:
+        - panda_1_finger_joint1
+    gains:
+        panda_1_finger_joint1:  {p: 50.0, d: 1.0, i: 0.01, i_clamp: 1.0}
+
+hand_2_controller:
+    type: "effort_controllers/JointTrajectoryController"
+    joints:
+        - panda_2_finger_joint1
+    gains:
+        panda_2_finger_joint1:  {p: 50.0, d: 1.0, i: 0.01, i_clamp: 1.0}
+hand_3_controller:
+    type: "effort_controllers/JointTrajectoryController"
+    joints:
+        - panda_3_finger_joint1
+    gains:
+        panda_3_finger_joint1:  {p: 50.0, d: 1.0, i: 0.01, i_clamp: 1.0}
+hand_4_controller:
+    type: "effort_controllers/JointTrajectoryController"
+    joints:
+        - panda_4_finger_joint1
+    gains:
+        panda_4_finger_joint1:  {p: 50.0, d: 1.0, i: 0.01, i_clamp: 1.0}
