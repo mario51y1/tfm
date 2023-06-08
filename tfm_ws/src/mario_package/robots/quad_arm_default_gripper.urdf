@@ -448,7 +448,6 @@
         <origin rpy="0 0 0" xyz="0 0 0.0584" />
         <axis xyz="0 -1 0" />
         <limit effort="100" lower="0.0" upper="0.04" velocity="0.2" />
-        <mimic joint="panda_1_finger_joint1" />
         <dynamics damping="0.3" />
     </joint>
     <joint name="panda_2_joint_base" type="fixed">
@@ -866,7 +865,6 @@
         <origin rpy="0 0 0" xyz="0 0 0.0584" />
         <axis xyz="0 -1 0" />
         <limit effort="100" lower="0.0" upper="0.04" velocity="0.2" />
-        <mimic joint="panda_2_finger_joint1" />
         <dynamics damping="0.3" />
     </joint>
     <joint name="panda_3_joint_base" type="fixed">
@@ -1284,7 +1282,6 @@
         <origin rpy="0 0 0" xyz="0 0 0.0584" />
         <axis xyz="0 -1 0" />
         <limit effort="100" lower="0.0" upper="0.04" velocity="0.2" />
-        <mimic joint="panda_3_finger_joint1" />
         <dynamics damping="0.3" />
     </joint>
     <joint name="panda_4_joint_base" type="fixed">
@@ -1702,7 +1699,6 @@
         <origin rpy="0 0 0" xyz="0 0 0.0584" />
         <axis xyz="0 -1 0" />
         <limit effort="100" lower="0.0" upper="0.04" velocity="0.2" />
-        <mimic joint="panda_4_finger_joint1" />
         <dynamics damping="0.3" />
     </joint>
     <gazebo>
