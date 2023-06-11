@@ -8,7 +8,7 @@
       <collision name="collision">
         <geometry>
           <box>
-            <size>0.4 0.4 0.4</size>
+            <size>0.2 0.2 0.2</size>
           </box>
         </geometry>
         <surface>
@@ -23,7 +23,7 @@
       <visual name="visual">
         <geometry>
           <box>
-            <size>0.4 0.4 0.4</size>
+            <size>0.2 0.2 0.2</size>
           </box>
         </geometry>
         <material>
@@ -36,11 +36,11 @@
     </link>
 
     <link name="minibox">
-      <pose>0 0 0.5 0 0 0</pose>
+      <pose>0 0 0.1 0 0 0</pose>
       <collision name="collision">
         <geometry>
           <box>
-            <size>0.1 0.1 0.2</size>
+            <size>0.05 0.05 0.1</size>
           </box>
         </geometry>
         <surface>
@@ -56,7 +56,7 @@
         <geometry>com
           <box>
             <size>
-              0.1 0.1 0.2
+              0.05 0.05 0.1
             </size>
           </box>
         </geometry>
