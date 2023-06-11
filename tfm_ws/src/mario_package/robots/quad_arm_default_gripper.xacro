@@ -49,7 +49,7 @@
   <xacro:franka_hand arm_id="$(arg arm_id_1)" gazebo="true" rpy="0 0 0" connected_to="$(arg arm_id_1)_link8" safety_distance="0.03" />
 
 
-  <xacro:franka_arm arm_id="$(arg arm_id_2)" connected_to="base"  xyz="0.2 -0.4 0.2" rpy="0 ${pi/2} 0" safety_distance="0.03" gazebo="true" joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"/>
+  <xacro:franka_arm arm_id="$(arg arm_id_2)" connected_to="base"  xyz="0.2 -0.4 0.2" rpy="0 ${-pi/2} ${pi}" safety_distance="0.03" gazebo="true" joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"/>
   <xacro:franka_hand arm_id="$(arg arm_id_2)" gazebo="true" rpy="0 0 0" connected_to="$(arg arm_id_2)_link8" safety_distance="0.03" />
 
 
@@ -57,7 +57,7 @@
   <xacro:franka_hand arm_id="$(arg arm_id_3)" gazebo="true" rpy="0 0 0" connected_to="$(arg arm_id_3)_link8" safety_distance="0.03" />
 
 
-  <xacro:franka_arm arm_id="$(arg arm_id_4)" connected_to="base"  xyz="0.2 0.4 0.2" rpy="0 ${pi/2} 0" safety_distance="0.03" gazebo="true" joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"/>
+  <xacro:franka_arm arm_id="$(arg arm_id_4)" connected_to="base"  xyz="0.2 0.4 0.2" rpy="0 ${-pi/2} ${pi}" safety_distance="0.03" gazebo="true" joint_limits="${xacro.load_yaml('$(find franka_description)/robots/panda/joint_limits.yaml')}"/>
   <xacro:franka_hand arm_id="$(arg arm_id_4)" gazebo="true" rpy="0 0 0" connected_to="$(arg arm_id_4)_link8" safety_distance="0.03" />
 
       <gazebo>
