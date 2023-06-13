@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
 # Python 2/3 compatibility imports
 from __future__ import print_function
+from os import wait
+
+
 from six.moves import input
+import yaml
 
 import sys
-import copy
+import time
 import rospy
 import moveit_commander
 import moveit_msgs.msg
@@ -27,6 +31,19 @@ from moveit_commander.conversions import pose_to_list
 
 
 from tf.transformations import quaternion_from_euler
+import logging
+loger = logging.getLogger('moveit mario')
+loger.setLevel(logging.INFO)
+
+ch = logging.StreamHandler()
+ch.setLevel(logging.INFO)
+
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+ch.setFormatter(formatter)
+loger.addHandler(ch)
+
+#logging.basicConfig(format='%(asctime)s - %(message)s',level=logging.DEBUG)
+
 moveit_commander.roscpp_initialize(sys.argv)
 rospy.init_node("python_moveit", anonymous=True)
 rospack = rospkg.RosPack()
@@ -49,6 +66,15 @@ scene = moveit_commander.PlanningSceneInterface()
 ## This interface can be used to plan and execute motions:
 arm_1_id = "panda_arm_1"
 arm_1_move_group = moveit_commander.MoveGroupCommander(arm_1_id)
+arm_3_id = "panda_arm_3"
+arm_3_move_group = moveit_commander.MoveGroupCommander(arm_3_id)
+
+hand_1_id = "hand_1"
+hand_1_move_group = moveit_commander.MoveGroupCommander(hand_1_id)
+hand_3_id = "hand_3"
+hand_3_move_group = moveit_commander.MoveGroupCommander(hand_3_id)
+
+
 
 ## Create a `DisplayTrajectory`_ ROS publisher which is used to display
 ## trajectories in Rviz:
@@ -57,6 +83,11 @@ display_trajectory_publisher = rospy.Publisher(
     moveit_msgs.msg.DisplayTrajectory,
     queue_size=20,
 )
+
+robot_poses = []
+with open(rospack.get_path('mario_package')+"/config/poses.yaml") as f:
+    robot_poses = yaml.load(f, Loader=yaml.SafeLoader)
+    logging.info(robot_poses)
 
 def basic_info():
     ## BEGIN_SUB_TUTORIAL basic_info
@@ -156,11 +187,64 @@ def add_boxes():
 
     pass
 
+def open_hand(hand_group):
+    loger.info(f"Opening {hand_group.get_name()}")
+    joint_goal = hand_group.get_current_joint_values()
+    joint_goal[0] = 0.04
+    joint_goal[1] = 0.04
+
+    # The go command can be called with joint values, poses, or without any
+    # parameters if you have already set the pose or joint target for the group
+    hand_group.go(joint_goal, wait=True)
+
+    # Calling ``stop()`` ensures that there is no residual movement
+    hand_group.stop()
+
+def close_hand(hand_group):
+    loger.info(f"Closing {hand_group.get_name()}")
+    joint_goal = hand_group.get_current_joint_values()
+    joint_goal[0] = 0
+    joint_goal[1] = 0
+
+    # The go command can be called with joint values, poses, or without any
+    # parameters if you have already set the pose or joint target for the group
+    hand_group.go(joint_goal, wait=True)
+
+    # Calling ``stop()`` ensures that there is no residual movement
+    hand_group.stop()
+
+def arm_1_grab_box():
+    # open hand
+
+    #hand_1_move_group.set_pose_target()
+    open_hand(hand_1_move_group)
+
+    # move in front of box
+    joint_goal = robot_poses["arm_1_pre_box_positon"]
+    arm_1_move_group.go(joint_goal,wait=True)
+    arm_1_move_group.stop()
+
+    #group.set_pose_target(pose_goal)    # attach to box
+    time.sleep(1)
+    joint_goal = robot_poses["arm_1_box_positon"]
+    arm_1_move_group.go(joint_goal,wait=True)
+    arm_1_move_group.stop()
+
+
+    pass
+
 def main():
+    arm_1_pre_box_positon = [2.897210565971678, -1.6666217813086543, -0.18071117991678598, -2.4980363276353716, 2.8972393008778425, 2.2981210241432795, -2.7421587972592585]
+
     basic_info()
-    input("============ Press `Enter` to add a box to the planning scene ...")
-    add_boxes()
-    print(scene.get_objects())
+    # input("============ Press `Enter` to add a box to the planning scene ...")
+    # add_boxes()
+    # input("============ Press `Enter` to move arm 1 to get box ...")
+    arm_1_grab_box()
+    #loger.info(arm_1_move_group.get_current_state())
+    #loger.info(arm_1_move_group.get_current_joint_values())
+    #loger.info(arm_1_move_group.get_named_targets())
+    #loger.info(arm_1_move_group.get_remembered_joint_values())
     pass
 
 if __name__=="__main__":
