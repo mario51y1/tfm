@@ -157,7 +157,7 @@ def add_boxes():
 
     box_pose = geometry_msgs.msg.PoseStamped()
     box_pose.header.frame_id ="panda_3_link0"
-    box_pose.pose.position.z = 0.85
+    box_pose.pose.position.z = 0.95
     box_pose.pose.position.x = 0.15
     box_pose.pose.position.y = 0.2
       
@@ -214,35 +214,86 @@ def close_hand(hand_group):
     hand_group.stop()
 
 def arm_1_grab_box():
-    # open hand
-
-    #hand_1_move_group.set_pose_target()
+    # hand_1_move_group.set_pose_target()
     open_hand(hand_1_move_group)
 
     # move in front of box
-    joint_goal = robot_poses["arm_1_pre_box_positon"]
+    joint_goal = robot_poses["arm_1_pre_box_position"]
     arm_1_move_group.go(joint_goal,wait=True)
     arm_1_move_group.stop()
 
-    #group.set_pose_target(pose_goal)    # attach to box
+    # group.set_pose_target(pose_goal)    # attach to box
     time.sleep(1)
-    joint_goal = robot_poses["arm_1_box_positon"]
+    joint_goal = robot_poses["arm_1_box_position"]
     arm_1_move_group.go(joint_goal,wait=True)
     arm_1_move_group.stop()
+    
+    # attach box
+    arm_1_move_group.attach_object('box2',link_name='panda_1_hand')
 
+def arm_3_grab_box():
+    # hand_1_move_group.set_pose_target()
+    open_hand(hand_3_move_group)
 
-    pass
+    # move in front of box
+    joint_goal = robot_poses["arm_3_pre_box_position"]
+    arm_3_move_group.go(joint_goal,wait=True)
+    arm_3_move_group.stop()
+
+    # group.set_pose_target(pose_goal)    # attach to box
+    time.sleep(1)
+    joint_goal = robot_poses["arm_3_box_position"]
+    arm_3_move_group.go(joint_goal,wait=True)
+    arm_3_move_group.stop()
+    
+    # attach box
+    arm_3_move_group.attach_object('box1',link_name='panda_3_hand')
+
+def move_pre_attachment():
+    joint_goal = robot_poses["arm_1_pre_attachment"]
+    arm_1_move_group.go(joint_goal,wait=True)
+    arm_1_move_group.stop()
+    joint_goal = robot_poses["arm_3_pre_attachment"]
+    arm_3_move_group.go(joint_goal,wait=True)
+    arm_3_move_group.stop()
+
+def attach_pieces():
+    joint_goal = robot_poses["arm_1_attachment"]
+    arm_1_move_group.go(joint_goal,wait=True)
+    arm_1_move_group.stop()
+    joint_goal = robot_poses["arm_3_attachment"]
+    arm_3_move_group.go(joint_goal,wait=True)
+    arm_3_move_group.stop()
+
+    scene.remove_attached_object('panda_1_hand','box2')
+    scene.remove_attached_object('panda_3_hand','box1')
+
+def move_away_attachment():
+    joint_goal = robot_poses["arm_1_dettach"]
+    arm_1_move_group.go(joint_goal,wait=True)
+    arm_1_move_group.stop()
+    joint_goal = robot_poses["arm_3_dettach"]
+    arm_3_move_group.go(joint_goal,wait=True)
+    arm_3_move_group.stop()
 
 def main():
-    arm_1_pre_box_positon = [2.897210565971678, -1.6666217813086543, -0.18071117991678598, -2.4980363276353716, 2.8972393008778425, 2.2981210241432795, -2.7421587972592585]
 
     basic_info()
-    # input("============ Press `Enter` to add a box to the planning scene ...")
-    # add_boxes()
-    # input("============ Press `Enter` to move arm 1 to get box ...")
+    input("============ Press `Enter` to add a box to the planning scene ...")
+    add_boxes()
+    input("============ Press `Enter` to move arm 1 to get box ...")
     arm_1_grab_box()
+    input("============ Press `Enter` to move arm 3 to get box ...")
+    arm_3_grab_box()
+    input("============ Press `Enter` move arms to preattach ...")
+    move_pre_attachment()
+    input("============ Press `Enter` to do the attachment ...")
+    attach_pieces()
+    input("============ Press `Enter` to move away from the attachment ...")
+    move_away_attachment()
     #loger.info(arm_1_move_group.get_current_state())
     #loger.info(arm_1_move_group.get_current_joint_values())
+    #loger.info(arm_3_move_group.get_current_joint_values())
     #loger.info(arm_1_move_group.get_named_targets())
     #loger.info(arm_1_move_group.get_remembered_joint_values())
     pass
