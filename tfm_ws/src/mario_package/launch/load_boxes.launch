@@ -1,0 +1,49 @@
+<launch>
+  <arg name="robot_name" default=""/>
+  <arg name="x" default="0.0"/>
+  <arg name="y" default="0.0"/>
+  <arg name="z" default="5.0"/>
+  <arg name="roll" default="0"/>
+  <arg name="pitch" default="0"/>
+  <arg name="yaw" default="0.0"/>
+  <arg name="sdf_robot_file" default="$(find mario_package)/models/assembly_box/model.sdf"/>
+  <node name="boxes_spawn" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+  args="
+    -file $(arg sdf_robot_file)
+    -sdf 
+    -x 1.15
+    -y 0.6
+    -z 1.6
+    -R  0
+    -P -01.5707 
+    -Y 0
+
+    -model box1"/>
+<!-- 
+ARM 3 TO BOX 1
+    -x 0.2 + 
+    -y 0.4 + y
+    -z 0.75 + 1 - x
+-->
+
+  <node name="boxes_spawn2" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" 
+  args="
+    -file $(arg sdf_robot_file)
+    -sdf 
+    -x 1.3
+    -y -0.4  
+    -z 1.65
+    -R 0 
+    -P -01.5707
+    -Y 0
+    -model box2"/>
+
+<!-- 
+ARM 1 TO BOX 2
+    -x 0.2 + z
+    -y -0.4    + y
+    -z 0.75 + 1 -x
+-->
+
+
+</launch>

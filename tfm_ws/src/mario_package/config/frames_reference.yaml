@@ -1,0 +1,17 @@
+base_1_to_world:
+  x: 1.750 
+  y: 0.400
+  z: -0.200
+base_3_to_world:
+  x: 1.750 
+  y: -0.400
+  z: -0.200
+
+box_1_relative_to_arm:
+  x: 0.15
+  y: 0.2
+  z: 0.95
+box_2_relative_to_arm:
+  x: 0.1
+  y: 0.0
+  z: 1.1
