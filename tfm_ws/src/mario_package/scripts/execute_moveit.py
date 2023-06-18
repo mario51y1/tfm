@@ -29,6 +29,7 @@ except:  # For Python 2 compatibility
 from std_msgs.msg import String
 from moveit_commander.conversions import pose_to_list
 
+from gazebo_ros_link_attacher.srv import Attach, AttachRequest, AttachResponse
 
 from tf.transformations import quaternion_from_euler
 import logging
@@ -74,7 +75,21 @@ hand_1_move_group = moveit_commander.MoveGroupCommander(hand_1_id)
 hand_3_id = "hand_3"
 hand_3_move_group = moveit_commander.MoveGroupCommander(hand_3_id)
 
+# Attach srv
+#rospy.init_node('attach_gazebo')
+rospy.loginfo("Creating ServiceProxy to /link_attacher_node/attach")
+attach_srv = rospy.ServiceProxy('/link_attacher_node/attach',
+                                Attach)
+attach_srv.wait_for_service()
+rospy.loginfo("Created ServiceProxy to /link_attacher_node/attach")
 
+# Dettach srv
+#rospy.init_node('dettach_gazebo')
+rospy.loginfo("Creating ServiceProxy to /link_attacher_node/detach")
+dettach_srv = rospy.ServiceProxy('/link_attacher_node/detach',
+                                Attach)
+dettach_srv.wait_for_service()
+rospy.loginfo("Created ServiceProxy to /link_attacher_node/detach")
 
 ## Create a `DisplayTrajectory`_ ROS publisher which is used to display
 ## trajectories in Rviz:
@@ -88,6 +103,26 @@ robot_poses = []
 with open(rospack.get_path('mario_package')+"/config/poses.yaml") as f:
     robot_poses = yaml.load(f, Loader=yaml.SafeLoader)
     logging.info(robot_poses)
+
+def attach_gazebo(arm, cube):
+    rospy.loginfo(f"Attaching {arm} and {cube}")
+    req = AttachRequest()
+    req.model_name_1 = "quad_arm"
+    req.link_name_1 = f"{arm}_link7"
+    req.model_name_2 = cube
+    req.link_name_2 = "box"
+
+    attach_srv.call(req)
+
+def dettach_gazebo(arm, cube):
+    rospy.loginfo(f"Dettaching {arm} and {cube}")
+    req = AttachRequest()
+    req.model_name_1 = "quad_arm"
+    req.link_name_1 = f"{arm}_link7"
+    req.model_name_2 = cube
+    req.link_name_2 = "box"
+
+    dettach_srv.call(req)
 
 def basic_info():
     ## BEGIN_SUB_TUTORIAL basic_info
@@ -231,6 +266,7 @@ def arm_1_grab_box():
     # attach box
     arm_1_move_group.attach_object('box2',link_name='panda_1_hand')
 
+    attach_gazebo("panda_1","box2")
 def arm_3_grab_box():
     # hand_1_move_group.set_pose_target()
     open_hand(hand_3_move_group)
@@ -248,6 +284,7 @@ def arm_3_grab_box():
     
     # attach box
     arm_3_move_group.attach_object('box1',link_name='panda_3_hand')
+    attach_gazebo("panda_3","box1")
 
 def move_pre_attachment():
     joint_goal = robot_poses["arm_1_pre_attachment"]
@@ -266,7 +303,17 @@ def attach_pieces():
     arm_3_move_group.stop()
 
     scene.remove_attached_object('panda_1_hand','box2')
+    dettach_gazebo("panda_1", "box2")
     scene.remove_attached_object('panda_3_hand','box1')
+    dettach_gazebo("panda_3", "box1")
+
+    #attach boxes together
+    req = AttachRequest()
+    req.model_name_1 = "box1"
+    req.link_name_1 = "box"
+    req.model_name_2 = "box2"
+    req.link_name_2 = "box"
+    attach_srv.call(req)
 
 def move_away_attachment():
     joint_goal = robot_poses["arm_1_dettach"]

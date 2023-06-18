@@ -13,6 +13,7 @@
     </physics>
 
     <gravity>0.0 0.0 0.0</gravity>
+    <plugin name="ros_link_attacher_plugin" filename="libgazebo_ros_link_attacher.so"/>
     <magnetic_field>0.0 0.0 0.0</magnetic_field>
 
     <include>

@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 <launch>
+    <rosparam command="load" file="$(find talos_description)/config/orbit_parameters.yaml"/>
     <!-- Run the main MoveIt executable with trajectory execution -->
     <include file="$(find mario_move_it_config_quad_default_gripper)/launch/move_group.launch">
         <arg name="allow_trajectory_execution" value="true" />
@@ -14,6 +15,9 @@
     <!-- Start the simulated robot in an empty Gazebo world -->
     <include file="$(find mario_package)/launch/move_it_quad_default_gripper.launch" />
 
+    
+
+    
     <!-- Start the controllers and robot state publisher-->
     <include file="$(find mario_move_it_config_quad_default_gripper)/launch/control_utils.launch"/>
 
